@@ -6,12 +6,60 @@
 
 body{
     font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
-    background-color: aliceblue ;
+    background: rgb(70, 185, 243) url("/static/imagens/background.jpg") repeat-x;
 }
+
+#container{
+    width: 750px;
+    margin: 25px auto;
+}
+
 #topo {
     height: 150px;
-    border:aliceblue
+    border: 1px solid red;
+    background: url("/static/imagens/fundo3.png" ) no-repeat right center;
+    background-size: 200px;
+    padding: 25px;
+
 }
+
+.logo {
+    width: 150px;
+    height: 70px;
+    padding: 25px;
+    background: url(/static/imagens/logo.png) no-repeat center;
+    background-size: 125px;
+    text-indent: 300px;
+    
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#topo ul{
+    background: #294c71;
+    margin-top: 10px;
+    float: left;
+}
+
+#topo ul li {
+    float: left;
+}
+
+#topo ul a{
+    font-size: 1.0em;
+    display: block;
+    padding: 0.5em 1.5em;
+    line-height: 1.0em;
+    text-decoration: none;
+    color: #fff;
+    
+}
+#topo ul a:hover{
+    color: black;
+}
+
 .branco{
     background-color: aliceblue;
     
