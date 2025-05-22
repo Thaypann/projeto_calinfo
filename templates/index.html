@@ -7,7 +7,10 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
+
+  <!-- Início Container-->
   <div id="container">
+    <!--Início Topo-->
     <div id="topo">
       <h1 class="logo"></h1>
       <ul id="navegacao">
@@ -16,16 +19,126 @@
         <li><a href="/home">Home</a></li>
         <li><a href="/home">Home</a></li>
         <li><a href="/home">Notícias</a></li>
-        <li><a href="/home">Home</a></li>
+
 
 
       </ul>
-    </div>
-  </div>
+    </div> <!-- Fim/Topo-->
+      
+    <!--Início Destaque-->
+    <div id="conteudo">
 
-  <div id="lateral">
-    <div class="caixa">
-        <h2>Períodos</h2>
+      <div id="primario">
+        <div class="caixa">
+          <h2>Destaque</h2>
+          <div class="caixa-conteudo">
+            <h3>Centro Acadêmico</h3>
+            <img src="{{url_for('static', filename='/imagens/logo1.png') }}" width="100%" alt="100%">
+            <p>
+              Visite nosso perfil no instagram e acompanhe 
+              fique por dentro das novidades do curso.
+            </p>
+            <a href="">Acessar perfil</a>
+    
+          </div>
+        </div> <!--Fim Destaque-->
+
+        <!--Inicio Noticias-->
+         <div class="caixa">
+          <h2>Notícias</h2>
+          <div class="caixa-conteudo">
+            <ul id="lista-noticias">
+              <li>
+                <a href="noticia1"> <!--Noticia1-->
+                  <p>Brasil e China devem fechar acordo
+                  para baratear maquinário agrícola
+                  </p>
+                </a>
+                <p class="legenda">12/05/2025 Metrópoles</p>
+              </li>
+              <li>
+                <a href="noticia2"><!--Noticia2-->
+                  <p>IFRN avança com Centro de Tecnologia e Cultura
+                     que vai funcionar na Cidade Alta
+                  </p>
+                </a>
+                <p class="legenda">11/05/2025 Saiba Mais</p>
+              </li>
+              <li>
+                <a href="noticia3"><!--Noticia3-->
+                  <p>PartiuIF: divulgada a terceira chamada de estudantes para pré-matrícula
+                  </p>
+                </a>
+                <p class="legenda">09/05/2025 Blog Antenado</p>
+              </li>
+              <li>
+                <a href="noticia4"><!--Noticia4-->
+                  <p>Conif assina acordo e confirma aliança de Ciência, Tecnologia e Inovação com a Embrapa
+                  </p>
+                </a>
+                <p class="legenda">08/05/2025 Conif</p>
+              </li>
+              <li>
+                <a href="noticia5"><!--Noticia5-->
+                  <p>IFRN divulga Concurso Público com 52 vagas em diversos cargos.
+                  </p>
+                </a>
+                <p class="legenda">08/05/2025 Concursos RN</p>
+              </li>
+            </ul>
+    
+          </div>
+        </div>
+
+
+      </div><!--fim notícias-->
+
+      <div id="secundario">
+        <div class="caixa"> <!-- Inicio Suap-->
+          <h2>Portal</h2>
+          <div class="caixa-conteudo">
+            <h3 class="portal">SUAP - Sistema Unificado de Administração Pública</h3>
+            <img src="{{url_for('static', filename='/imagens/suap-site.png') }}" width="100%" alt="100%">
+            <p>
+              Acompanhe o seu desenvolvimento acadêmico 
+              pelo seu perfil no SUAP .
+            </p>
+            <a href="portal">Acessar portal</a>
+    
+          </div>
+        </div> <!--Fim SUAP-->
+
+        <div class="caixa">
+          <h2>Projetos de Ensino</h2>
+          <div class="caixa-conteudo">
+            <p class="legenda">Inscrições abertas</p>
+            <ul id="lista-noticias">
+              <li>
+                <a href="inscricao1"> <!--projetos de ensino-->
+                  <p>EDITAL Nº22/2025 - DG/CANG/RE/IFRN - Projetos de Ensino com Fomento Institucional 2025 - Edital Específico do Campus Canguaretama
+                  </p>
+                </a>
+                <p class="legenda">Até 19/05/2025 23:59</p>
+              </li>
+              <li>
+                <a href="inscricao2"> <!--projetos de ensino-->
+                  <p>EDITAL Nº 18/2025 - DG/JC/RE/IFRN - Projetos de Ensino com Fomento Institucional - Campus João Câmara
+                  </p>
+                </a>
+                <p class="legenda">Até 18/05/2025 23:59</p>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <!--Inicio Lateral-->
+      <div id="lateral">
+        <div class="caixa">
+        <h2>Disciplinas por período</h2>
+
         <div class="caixa-conteudo">
             <ul>
               <li><a href="primeiro">1º Período</a></li>
@@ -38,12 +151,39 @@
               <li><a href="">8º Período</a></li>
             </ul>
         </div>
+        <div class="caixa">
+        <h2>News</h2>
+        <div class="caixa-conteudo">
+           
+            <form>
+              <div>
+                <label for="email">Email:</label>
+                <input type="text" name="email" id="email" placeholder="E-mail">
+              </div>
+              <div>
+                <input class="submit" type="submit" value="Cadastrar">
+              </div>
+            </form>
+        </div>
     </div>
-  </div>
-    
 
-  <div id="secundario">
-    <img src="{{url_for('static', filename='/imagens/img2.png') }}" alt="fundo">
+      </div> <!--Fim Lateral-->
+
+
+    </div><!--Fim conteúdo-->
+
+
+  </div> <!--Fim Container-->
+  <div id="container-rodape" style="clear: both;">
+      <div id="rodape">
+        CALINFO — Centro Acadêmico de Licenciatura em Informática<br>
+        Instituto Federal de Educação, Ciência e Tecnologia do Estado do Rio Grande do Norte (IFRN)<br>
+        © 2025 CALINFO. Todos os direitos reservados.<br>
+        Contato: @email | Instagram: @calinfo.oficial
+      </div>
+    
   </div>
+
+
 </body>
 </html>

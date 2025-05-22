@@ -6,17 +6,16 @@
 
 body{
     font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
-    background: rgb(70, 185, 243) url("/static/imagens/background.jpg") repeat-x;
+    background: #ececec url("/static/imagens/backgroundd.jpg") repeat-x;
 }
 
 #container{
-    width: 750px;
+    width: 850px;
     margin: 25px auto;
 }
 
 #topo {
     height: 150px;
-    border: 1px solid red;
     background: url("/static/imagens/fundo3.png" ) no-repeat right center;
     background-size: 200px;
     padding: 25px;
@@ -60,61 +59,140 @@ ul{
     color: black;
 }
 
-.branco{
-    background-color: aliceblue;
-    
+/* Layout de três colunas*/
+
+#conteudo{
+    margin-top: 60px;
+    background: #294c71;
+
 }
 
 #lateral{
     width: 180px;
     float: left;
-    margin-left: 50px;
-    
+    margin: 0 0 20px -750px;
 }
-#secundario{
-    width: 750px;
+#primario {
+    width: 260px;
     float: left;
-    padding-left: 80px;
-    margin-left: 100px;
-    margin-top: 10px;
-    
+    margin: 0 0 30px 190px;
 }
-#lateral, ul, a {
-    font-size: 1.0em;
-    padding: 5px;
-    display: block;
-    line-height: 30px;
-    text-decoration: none;
-    color:black;
-    
+
+#duas-colunas #primario {
+    width: 555px;
+    float: left;
+    margin: 0 0 25px 200px;
+}
+#secundario {
+    width: 260px;
+    float: left;
+    margin: 0 0 30px 25px;
 
 }
-#lateral, ul ,a:hover{
-    color:#a1a1a1;
+
+/* Caixa */
+.caixa{
+    margin: 10px 0;
+    padding: 5px 0 5px 0;
+    background: #78d1b6 url("/static/imagens/fundo-caixa.png");
+    background-size: 25%;
+}
+
+.caixa-conteudo, ul, a{
+    padding: 10px;
+    margin-top: 5px;
+    
+}
+.caixa-conteudo, p{
+    padding: 2px;
+    color: #294d72;
+}
+.legenda{
+    font-size: 0.8em;
+    color: #a1a1a1;
+    padding-top: 5px;
+    float: right;
 }
 h2{
     font-size: 1.5em;
     background: #294c71;
     color: #fff;
     padding: 5px;
-}
-.caixa-conteudo, ul, a{
-    padding: 10px;
-    margin-top: 5px;
+    text-align: center;
     
 }
-.caixa{
-    margin: 10px 0;
-    padding: 5px 0 5px 0;
-    background: #78d1b6 url("/static/imagens/fundo.jpg");
+
+h3{
+    text-transform: uppercase;
+    display: inline;
+    font-size: 0.8 em;
+    padding: 3px;
+    text-align: right;
+
+}
+h3.portal{
+    font-size: 0.6 em;
+    
+}
+#lista-noticias li{
+    padding: 2px;
+    border-bottom: 1px solid #ccc;
+}
+#lista-noticias li a{
+    text-decoration: none;
+    color: #294d72;
 }
 
-#lateral ul a{
+/* Menu Laterais*/
+
+#lateral ul a {
     font-size: 1.0em;
     padding: 5px;
     display: block;
     line-height: 30px;
     text-decoration: none;
-    color:black
+    color:black;
+    border-bottom: 1px solid #f3f3f3;
     
+
 }
+#lateral ul a:hover{
+    color:#a1a1a1;
+}
+
+label{
+    display: block;
+    cursor: pointer;
+}
+input{
+    padding: 5px;
+    width: 125px;
+    font-size:1.0em;
+    background: #fff;
+}
+input.submit{
+    width: 80px;
+    color:#fff;
+    background-color: #294d72;
+    border: 2px solid #1b324b;
+    padding: 5px;
+}
+     
+/* Rodape */
+#container-rodape{
+    background: #294c71;
+    padding: 20px;
+}
+#rodape{
+    width: 750px;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 0.8em;
+    text-align: center;
+}
+
+img{
+    border: 4px solid #294c71;
+}
+
+    
