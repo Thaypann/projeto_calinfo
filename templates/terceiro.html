@@ -1,60 +1,72 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Licenciatura em Indormática</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-</head>
-<body>
-  <div id="container">
-    <div id="topo">
-      <h1 class="logo"></h1>
-      <ul id="navegacao">
-        <li><a href="/home">Home</a></li>
-        <li><a href="/home">Notícias</a></li>
-        <li><a href="/home">Home</a></li>
-        <li><a href="/home">Home</a></li>
-        <li><a href="/home">Notícias</a></li>
+{% extends 'base.html' %}
+  {% block conteudo %}  
+    <!--Início Destaque-->
+    <div id="conteudo">
+
+      <div id="duas-colunas">
+        <div class="caixa">
+          <h2>Disciplinas do Terceiro Período</h2>
+          <div class="caixa-conteudo">
+            <div class="list">
+              <ul>
+                <li>Desenvolvimento de Práticas Educativas e Formação Docente III</li>
+                <li>Didática</li>
+                <li>Inglês Instrumental</li>
+                <li>Probabilidade e Estatística</li>
+                <li>Programação Orientada a Objetos</li>
+                <li>Robótica Educacional</li>
+                <li>Seminário de Orientação ao Desenvolvimento<br> de Práticas Educativas e Formação Docente III</li>
+              </ul>
+            </div>
+    
+          </div>
+        </div> <!--Fim Destaque-->
+
+      
+        
 
 
+      </div><!--fim notícias-->
 
-      </ul>
-    </div>
-  </div>
+      <!--Inicio Lateral-->
+      <div id="lateral">
+        <div class="caixa">
+        <h2>Disciplinas por período</h2>
 
-  <div id="lateral">
-    <div class="caixa">
-        <h2>Períodos</h2>
         <div class="caixa-conteudo">
             <ul>
               <li><a href="primeiro">1º Período</a></li>
               <li><a href="segundo">2º Período</a></li>
               <li><a href="terceiro">3º Período</a></li>
               <li><a href="quarto">4º Período</a></li>
-              <li><a href="">5º Período</a></li>
-              <li><a href="">6º Período</a></li>
-              <li><a href="">7º Período</a></li>
-              <li><a href="">8º Período</a></li>
+              <li><a href="quinto">5º Período</a></li>
+              <li><a href="sexto">6º Período</a></li>
+              <li><a href="setimo">7º Período</a></li>
+              <li><a href="oitavo">8º Período</a></li>
+              <li><a href="optativas">Optativas</a></li>
             </ul>
         </div>
+        <div class="caixa">
+        <h2>Novidades</h2>
+        <div class="caixa-conteudo">
+           
+            <form>
+              <div>
+                <label for="email">Email:</label>
+                <input type="text" name="email" id="email" placeholder="E-mail">
+              </div>
+              <div>
+                <input class="submit" type="submit" value="Cadastrar">
+              </div>
+            </form>
+        </div>
     </div>
-  </div>
-    
 
-  <div id="secundario">
-    <h2>Disciplinas do Primeiro Período</h2>
-    
-    <div class="lista">
-        <ul>Desenvolvimento de Práticas Educativas e Formação Docente III</ul>
-        <ul>Didática</ul>
-        <ul>Inglês Instrumental</ul>
-        <ul>Probabilidade e Estatística</ul>
-        <ul>Programação Orientada a Objetos</ul>
-        <ul>Robótica Educacional</ul>
-        <ul>Seminário de Orientação ao Desenvolvimento<br> de Práticas Educativas e Formação Docente III</ul>
-        
-    </div>
-  </div>
-</body>
-</html>
+      </div> <!--Fim Lateral-->
+
+
+    </div><!--Fim conteúdo-->
+
+
+  </div> <!--Fim Container-->
+  {% endblock %}

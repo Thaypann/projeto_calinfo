@@ -1,12 +1,13 @@
 {% extends 'base.html' %}
-  {% block conteudo %}
+
+{% block conteudo %}
       
     <!--Início Destaque-->
     <div id="conteudo">
 
       <div id="primario">
         <div class="caixa">
-          <h2>Destaque</h2>
+          <h2 class="font-monospace">Destaque</h2>
           <div class="caixa-conteudo">
             <h3>Centro Acadêmico</h3>
             <img src="{{url_for('static', filename='/imagens/logo1.png') }}" width="100%" alt="100%">
@@ -21,7 +22,7 @@
 
         <!--Inicio Noticias-->
          <div class="caixa">
-          <h2>Notícias</h2>
+          <h2 class="font-monospace">Notícias</h2>
           <div class="caixa-conteudo">
             <ul id="lista-noticias">
               <li>
@@ -71,9 +72,9 @@
 
       <div id="secundario">
         <div class="caixa"> <!-- Inicio Suap-->
-          <h2>Portal</h2>
+          <h2 class="font-monospace">Portal</h2>
           <div class="caixa-conteudo">
-            <h3 class="portal">SUAP - Sistema Unificado de Administração Pública</h3>
+            <h3>SUAP - Sistema Unificado de Administração Pública</h3>
             <img src="{{url_for('static', filename='/imagens/suap-site.png') }}" width="100%" alt="100%">
             <p>
               Acompanhe o seu desenvolvimento acadêmico 
@@ -85,7 +86,7 @@
         </div> <!--Fim SUAP-->
 
         <div class="caixa">
-          <h2>Projetos de Ensino</h2>
+          <h2 class="font-monospace">Projetos de Ensino</h2>
           <div class="caixa-conteudo">
             <p class="legenda">Inscrições abertas</p>
             <ul id="lista-noticias">
@@ -121,14 +122,15 @@
               <li><a href="segundo">2º Período</a></li>
               <li><a href="terceiro">3º Período</a></li>
               <li><a href="quarto">4º Período</a></li>
-              <li><a href="">5º Período</a></li>
-              <li><a href="">6º Período</a></li>
-              <li><a href="">7º Período</a></li>
-              <li><a href="">8º Período</a></li>
+              <li><a href="quinto">5º Período</a></li>
+              <li><a href="sexto">6º Período</a></li>
+              <li><a href="setimo">7º Período</a></li>
+              <li><a href="oitavo">8º Período</a></li>
+              <li><a href="optativas">Optativas</a></li>
             </ul>
         </div>
         <div class="caixa">
-        <h2>News</h2>
+        <h2 class="font-monospace">Novidades</h2>
         <div class="caixa-conteudo">
            
             <form>
@@ -147,8 +149,5 @@
 
 
     </div><!--Fim conteúdo-->
-
-
-  </div> <!--Fim Container-->
 
   {% endblock %}

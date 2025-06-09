@@ -2,8 +2,6 @@ from flask import Flask, render_template, redirect
 
 app = Flask(__name__)
 
-app.debug = True
-
 @app.route("/")
 def index():
     return render_template("index.html")
@@ -27,6 +25,26 @@ def terceiro():
 @app.route('/quarto')
 def quarto():
     return render_template('quarto.html')
+
+@app.route('/quinto')
+def quinto():
+    return render_template('quinto.html')
+
+@app.route('/sexto')
+def sexto():
+    return render_template('sexto.html')
+
+@app.route('/setimo')
+def setimo():
+    return render_template('setimo.html')
+
+@app.route('/oitavo')
+def oitavo():
+    return render_template('oitavo.html')
+
+@app.route('/optativas')
+def optativas():
+    return render_template('optativas.html')
 
 @app.route('/inscricao1')
 def inscricao1():

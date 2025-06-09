@@ -4,6 +4,7 @@
     padding: 0;
 }
 
+
 body{
     font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
     background: #ececec url("/static/imagens/backgroundd.jpg") repeat-x;
@@ -23,11 +24,11 @@ body{
 }
 
 .logo {
-    width: 150px;
+    width: 75px;
     height: 70px;
-    padding: 25px;
+    padding: 60px;
     background: url(/static/imagens/logo.png) no-repeat center;
-    background-size: 125px;
+    background-size: 100px;
     text-indent: 300px;
     
 }
@@ -63,7 +64,7 @@ ul{
 
 #conteudo{
     margin-top: 60px;
-    background: #294c71;
+    
 
 }
 
@@ -125,7 +126,7 @@ h2{
 h3{
     text-transform: uppercase;
     display: inline;
-    font-size: 0.8 em;
+    font-size: 0.2 em;
     padding: 3px;
     text-align: right;
 
