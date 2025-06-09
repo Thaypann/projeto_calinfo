@@ -1,29 +1,5 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Licenciatura em Indormática</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-</head>
-<body>
-
-  <!-- Início Container-->
-  <div id="container">
-    <!--Início Topo-->
-    <div id="topo">
-      <h1 class="logo"></h1>
-      <ul id="navegacao">
-        <li><a href="/home">Home</a></li>
-        <li><a href="/home">Notícias</a></li>
-        <li><a href="/home">Home</a></li>
-        <li><a href="/home">Home</a></li>
-        <li><a href="/home">Notícias</a></li>
-
-
-
-      </ul>
-    </div> <!-- Fim/Topo-->
+{% extends 'base.html' %}
+  {% block conteudo %}
       
     <!--Início Destaque-->
     <div id="conteudo">
@@ -174,16 +150,5 @@
 
 
   </div> <!--Fim Container-->
-  <div id="container-rodape" style="clear: both;">
-      <div id="rodape">
-        CALINFO — Centro Acadêmico de Licenciatura em Informática<br>
-        Instituto Federal de Educação, Ciência e Tecnologia do Estado do Rio Grande do Norte (IFRN)<br>
-        © 2025 CALINFO. Todos os direitos reservados.<br>
-        Contato: @email | Instagram: @calinfo.oficial
-      </div>
-    
-  </div>
 
-
-</body>
-</html>
+  {% endblock %}

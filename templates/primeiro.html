@@ -7,7 +7,10 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
+
+  <!-- Início Container-->
   <div id="container">
+    <!--Início Topo-->
     <div id="topo">
       <h1 class="logo"></h1>
       <ul id="navegacao">
@@ -20,12 +23,43 @@
 
 
       </ul>
-    </div>
-  </div>
+    </div> <!-- Fim/Topo-->
+      
+    <!--Início Destaque-->
+    <div id="conteudo">
 
-  <div id="lateral">
-    <div class="caixa">
-        <h2>Períodos</h2>
+      <div id="duas-colunas">
+        <div class="caixa">
+          <h2>Disciplinas do Primeiro Período</h2>
+          <div class="caixa-conteudo">
+            <div class="list">
+              <ul>
+                <li>Desenvolvimento de Práticas Educativas e Formação Docente I</li>
+                <li>Fundamentos da Educação I</li>
+                <li>Informática</li>
+                <li>Língua Portuguesa</li>
+                <li>Matemática</li>
+                <li>Pensamento Computacional</li>
+                <li>Seminário de Integração Acadêmica</li>
+                <li>Seminário de Orientação ao Desenvolvimento<br> 
+                  de Práticas Educativas e Formação Docente I</li>
+              </ul>
+            </div>
+    
+          </div>
+        </div> <!--Fim Destaque-->
+
+      
+        
+
+
+      </div><!--fim notícias-->
+
+      <!--Inicio Lateral-->
+      <div id="lateral">
+        <div class="caixa">
+        <h2>Disciplinas por período</h2>
+
         <div class="caixa-conteudo">
             <ul>
               <li><a href="primeiro">1º Período</a></li>
@@ -38,11 +72,40 @@
               <li><a href="">8º Período</a></li>
             </ul>
         </div>
+        <div class="caixa">
+        <h2>News</h2>
+        <div class="caixa-conteudo">
+           
+            <form>
+              <div>
+                <label for="email">Email:</label>
+                <input type="text" name="email" id="email" placeholder="E-mail">
+              </div>
+              <div>
+                <input class="submit" type="submit" value="Cadastrar">
+              </div>
+            </form>
+        </div>
     </div>
-  </div>
-    
 
-  <div id="secundario">
+      </div> <!--Fim Lateral-->
+
+
+    </div><!--Fim conteúdo-->
+
+
+  </div> <!--Fim Container-->
+  <div id="container-rodape" style="clear: both;">
+      <div id="rodape">
+        CALINFO — Centro Acadêmico de Licenciatura em Informática<br>
+        Instituto Federal de Educação, Ciência e Tecnologia do Estado do Rio Grande do Norte (IFRN)<br>
+        © 2025 CALINFO. Todos os direitos reservados.<br>
+        Contato: @email | Instagram: @calinfo.oficial
+      </div>
+    
+  </div>
+
+ <!-- <div id="secundario">
     <h2>Disciplinas do Primeiro Período</h2>
     
     <div class="lista">
@@ -55,6 +118,6 @@
         <ul>Seminário de Integração Acadêmica</ul>
         <ul>Seminário de Orientação ao Desenvolvimento<br> de Práticas Educativas e Formação Docente I</ul>
     </div>
-  </div>
+  </div> -->
 </body>
 </html>
